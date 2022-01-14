@@ -1,0 +1,11 @@
+name: null
+channels:
+- conda-forge
+dependencies:
+- cma
+- ipython
+- jupyter
+- matplotlib
+- numpy
+- pip
+- python=3.8.12

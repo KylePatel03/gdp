@@ -1,7 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
-import copy
-import math
 
 class HopfieldNetworkRC:
     """ Class for the Hopfield Network with random problem structure.
@@ -22,8 +19,8 @@ class HopfieldNetworkRC:
         self.neurons = n
         self.states = self.init_states()
         self.weights = self.init_weights()
-        self.initial_weights = self.weights
-        
+        self.initial_weights = self.weights.copy()
+    
     def init_states(self):
         """Initialises a random bipolar network configuration.
         
